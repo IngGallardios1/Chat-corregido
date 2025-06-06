@@ -6,6 +6,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 export default () => {
     const [username, setUsername] = useState('');
 
+    
     return (
         <SafeAreaView style={styles.container}>
             <Stack.Screen options={{ headerShown: false }} />

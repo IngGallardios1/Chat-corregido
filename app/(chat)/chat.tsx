@@ -7,6 +7,7 @@ import { ChatMessage } from "../../src/models/chatMessage";
 import { useLocalSearchParams } from "expo-router";
 import { Send } from "lucide-react-native";
 
+
 type MessageBubbleProps = {
   chatMessage: ChatMessage,
   mySocketId?: string

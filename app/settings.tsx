@@ -8,6 +8,7 @@ export default () => {
     const router = useRouter();
     const [serverAddress, setServerAddress] = useState("http://localhost:3000");
 
+    
     useEffect(() => {
         (async () => {
             const localServerAddress = await AsyncStorage.getItem("serverAddress");
