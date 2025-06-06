@@ -3,7 +3,7 @@ import { ActivityIndicator, Button, FlatList,StyleSheet, TextInput, Text, View, 
 import { connectSocket } from "../../src/socket";
 import { Socket } from "socket.io-client";
 import { SafeAreaView } from "react-native-safe-area-context";
-import { ChatMessage } from "../chatMessage";
+import { ChatMessage } from "../../src/models/chatMessage";
 
 import { useLocalSearchParams } from "expo-router";
 
@@ -124,5 +124,5 @@ const style = StyleSheet.create({
     } as ViewStyle,
     othersChatBubble: {
       borderEndStartRadius: 0,
-    } as ViewStyle
+    } as ViewStyle
   });
