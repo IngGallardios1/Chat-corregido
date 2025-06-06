@@ -48,7 +48,7 @@ export default function ChatScreen() {
         setSocket(socketInstance);
         setIsLoading(false);
       })
-      .catch((error) => console.error("Error connecting socket:", error));
+      .catch((error) => console.error("Error conectando socket:", error));
     return () => {
       socket?.disconnect();
     };
@@ -86,8 +86,8 @@ export default function ChatScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.headerTitle}>Chat Room</Text>
-        <Text style={styles.headerSubtitle}>Logged in as {user}</Text>
+        <Text style={styles.headerTitle}>Sala de Chat</Text>
+        <Text style={styles.headerSubtitle}>Conectado como {user}</Text>
       </View>
 
       <FlatList
@@ -102,7 +102,7 @@ export default function ChatScreen() {
 
       <View style={styles.inputContainer}>
         <TextInput
-          placeholder="Type a message..."
+          placeholder="Escribe un mensaje..."
           style={styles.input}
           onChangeText={setMessage}
           value={message}

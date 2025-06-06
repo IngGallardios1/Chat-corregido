@@ -1,7 +1,6 @@
 import FontAwesome from "@expo/vector-icons/FontAwesome";
 import { Tabs } from "expo-router";
 
-
 export default () => (
     <Tabs screenOptions={{ tabBarActiveTintColor: "#20C020" }}>
         <Tabs.Screen 

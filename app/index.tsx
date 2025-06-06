@@ -14,22 +14,22 @@ export default () => {
                     source={{ uri: 'https://images.pexels.com/photos/7014924/pexels-photo-7014924.jpeg' }}
                     style={styles.image}
                 />
-                <Text style={styles.title}>Welcome to ChatApp</Text>
-                <Text style={styles.subtitle}>Connect with people around the world</Text>
+                <Text style={styles.title}>Bienvenido a ChatApp</Text>
+                <Text style={styles.subtitle}>Conéctate con personas de todo el mundo</Text>
                 <View style={styles.inputContainer}>
                     <TextInput
-                        placeholder="Enter your username"
+                        placeholder="Ingresa tu nombre de usuario"
                         value={username}
                         onChangeText={t => setUsername(t)}
                         style={styles.input}
                         placeholderTextColor="#666"
                     />
                     <Link href={{ pathname: "/chat", params: { user: username } }} asChild>
-                        <Button title="Join Chat" />
+                        <Button title="Unirse al Chat" />
                     </Link>
                 </View>
                 <Link href="/settings" style={styles.settingsLink}>
-                    <Text style={styles.link}>Settings</Text>
+                    <Text style={styles.link}>Configuración</Text>
                 </Link>
             </View>
         </SafeAreaView>
